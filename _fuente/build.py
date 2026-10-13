@@ -7,7 +7,7 @@ from pathlib import Path
 SRC = Path(__file__).parent
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else SRC.parent / "site"
 SHOW_PRICES = True          # False -> oculta precios y totales en toda la web
-WA = "529541833072"         # +52 1 954 183 3072 (visto en la captura del chat) -> CONFIRMAR con el cliente
+WA = "529542065113"         # +52 1 954 206 5113 (visto en la captura del chat) -> CONFIRMAR con el cliente
 
 CATS = [
     ("lavado", "Lavado"),
@@ -54,6 +54,9 @@ P = [
     dict(id="black-mamba-crema", brand="Black Mamba Crema", type="Restaurador · interiores", name="Restaurador de Plásticos Black Mamba (crema)", cat="interior", pres="500 ml", ph="Base agua", price=88, tint="225,29,46",
          desc="Crema a base de agua con agradable aroma, diseñada para restaurar y abrillantar interiores. También sirve en exteriores para los amantes del terminado brillante.",
          specs=[["Presentación", "500 ml"], ["Base", "Agua"], ["Acabado", "Brillante"], ["Uso", "Interiores y exteriores"]]),
+    dict(id="aromatizante", brand="Aromatizante", type="Variedad de aromas", name="Aromatizante para Auto", cat="interior", pres="250 ml", ph="Ambiente fresco", price=55, minQty=12, tint="255,110,64",
+         desc="Aromatizante en spray para el auto, en variedad de aromas. Fragancia premium de larga duración que neutraliza los malos olores y deja un ambiente fresco.",
+         specs=[["Presentación", "250 ml, en spray"], ["Aromas", "Variedad de aromas"], ["Fragancia", "Premium, de larga duración"], ["Efecto", "Ambiente fresco · neutraliza malos olores"], ["Mayoreo", "$55 por pieza · caja con 12 piezas"], ["Precaución", "Evitar contacto con ojos y vías respiratorias · fuera del alcance de los niños"]]),
     dict(id="black-mamba-gel", brand="Black Mamba Gel", type="Restaurador · exteriores", name="Restaurador de Plásticos Black Mamba (gel)", cat="exterior", pres="500 ml", ph="Efecto natural", price=88, tint="225,29,46",
          desc="Gel a base de solvente para plásticos exteriores: fascias, molduras y plásticos del motor. Devuelve el color original a los plásticos deteriorados por el sol.",
          specs=[["Presentación", "500 ml"], ["Base", "Solvente"], ["Acabado", "Natural"], ["Uso", "Fascias, molduras y plásticos del motor"]]),
@@ -115,6 +118,8 @@ def card(i, p):
             price = '<p class="pcard__price js-price"><small>Mayoreo 6+ pzas</small><b>$500</b><em>unidad $650</em></p>'
         elif p["id"] == "guante-verde":
             price = '<p class="pcard__price js-price"><small>Mayoreo 6+ pzas</small><b>$95</b></p>'
+        elif p["id"] == "aromatizante":
+            price = '<p class="pcard__price js-price"><small>Caja de 12 pzas</small><b>$55</b></p>'
         else:
             price = f'<p class="pcard__price js-price"><small>Mayoreo</small><b>${p["price"]}</b></p>'
     return (
@@ -132,7 +137,7 @@ def card(i, p):
 def main():
     tpl = (SRC / "template.html").read_text(encoding="utf-8")
     catalog = "\n".join(card(i, p) for i, p in enumerate(P))
-    chips = ['<button class="fchip is-on" type="button" data-filter="all" aria-pressed="true">Todo <i>19</i></button>']
+    chips = ['<button class="fchip is-on" type="button" data-filter="all" aria-pressed="true">Todo <i>20</i></button>']
     for key, label in CATS:
         n = sum(1 for p in P if p["cat"] == key)
         chips.append(f'<button class="fchip" type="button" data-filter="{key}" aria-pressed="false">{esc(label)} <i>{n}</i></button>')
