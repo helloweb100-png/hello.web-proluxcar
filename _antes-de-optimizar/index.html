@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="es-MX" data-prices="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Proluxcar | Productos de detallado automotriz en mayoreo</title>
+<meta name="description" content="Shampoos, ceras, pulidores y limpiadores concentrados para detallado automotriz a precio de mayoreo, con capacitación. Arma tu pedido y cotiza por WhatsApp.">
+<meta name="keywords" content="detallado automotriz, productos para detallado, shampoo para auto mayoreo, cera líquida para auto, pulidor de pintura, limpiador férrico, capacitación detallado automotriz">
+<meta name="theme-color" content="#050506">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:site_name" content="Proluxcar">
+<meta property="og:title" content="Proluxcar | Excelencia en cada detalle">
+<meta property="og:description" content="19 productos de detallado automotriz a precio de mayoreo, con capacitación para tu equipo. Arma tu pedido y cotiza por WhatsApp.">
+<meta property="og:image" content="img/hero-int-shine.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="apple-touch-icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/logo.png">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js','is-loading')</script>
+<noscript><style>.loader{display:none!important}.js [data-reveal],.js [data-split]{opacity:1!important;transform:none!important;visibility:visible!important}.faq__a{grid-template-rows:1fr!important}.faq__a>div{visibility:visible!important}</style></noscript>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Store","name":"Proluxcar","description":"Productos de detallado automotriz en mayoreo: shampoos, ceras, pulidores, limpiadores y herramientas, con capacitación sobre los productos.","slogan":"Excelencia en cada detalle","telephone":"+52 954 183 3072","areaServed":"MX","knowsAbout":["Detallado automotriz","Shampoo para auto","Cera líquida","Pulido de pintura","Limpiador férrico","Capacitación en detallado"]},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"¿Los precios del catálogo son de mayoreo?","acceptedAnswer":{"@type":"Answer","text":"Sí. En el cañón de espuma ($500) y el guante de microfibra ($95) el precio de mayoreo aplica a partir de 6 piezas. Cuéntanos tu volumen y lo revisamos."}},
+{"@type":"Question","name":"¿Ofrecen capacitación?","acceptedAnswer":{"@type":"Answer","text":"Sí, ofrecemos servicios de capacitación sobre nuestros productos: diluciones, tiempos de aplicación y qué fórmula usar en cada superficie."}},
+{"@type":"Question","name":"¿Cómo diluyo los shampoos?","acceptedAnswer":{"@type":"Answer","text":"Storm Pink y Bubble Blue: 1 parte de producto por 4 de agua en espumador, o 50 ml por cubeta en lavado de contacto. Storm Red se ajusta según qué tan sucio esté el auto."}},
+{"@type":"Question","name":"¿Por qué siempre hay que trabajar en sombra?","acceptedAnswer":{"@type":"Answer","text":"Para que el producto no se seque sobre la pintura y deje marcas. Aplica especialmente a shampoos, desengrasantes, limpiadores, pulido y cremas."}},
+{"@type":"Question","name":"¿Puedo usar Aluclean en cualquier superficie?","acceptedAnswer":{"@type":"Answer","text":"No. Es un limpiador férrico ácido: se trabaja en sombra, por máximo 5 minutos, y nunca sobre plásticos ni superficies electrónicas."}},
+{"@type":"Question","name":"¿Cómo hago mi pedido?","acceptedAnswer":{"@type":"Answer","text":"Arma tu pedido en el catálogo y envíalo por WhatsApp, o pide el catálogo y dinos qué productos y cantidades necesitas. Te confirmamos precio y disponibilidad por el mismo chat."}}
+]}
+]}
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader" role="status" aria-live="polite" aria-label="Cargando Proluxcar">
+  <div class="loader__panel loader__panel--t"></div>
+  <div class="loader__panel loader__panel--b"></div>
+  <div class="loader__core">
+    <svg class="loader__ring" viewBox="0 0 200 200" aria-hidden="true">
+      <circle class="loader__track" cx="100" cy="100" r="92"/>
+      <circle class="loader__bar" cx="100" cy="100" r="92" pathLength="100"/>
+      <circle class="loader__dash" cx="100" cy="100" r="80"/>
+    </svg>
+    <img class="loader__logo" src="img/logo.png" alt="" width="120" height="120">
+  </div>
+  <p class="loader__count mono"><span id="loaderNum">000</span><i>%</i></p>
+  <p class="loader__tag mono">Excelencia en cada detalle</p>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="hdr" id="hdr">
+  <div class="hdr__bar">
+    <a class="brand" href="#inicio" aria-label="Proluxcar, ir al inicio"><img src="img/logo.png" alt="" width="44" height="44"><span>Proluxcar</span></a>
+    <nav class="hdr__nav" aria-label="Principal">
+      <ul>
+        <li><a href="#sistema"><span class="roll"><span class="roll__in"><span>Sistema</span><span aria-hidden="true">Sistema</span></span></span></a></li>
+        <li><a href="#catalogo"><span class="roll"><span class="roll__in"><span>Catálogo</span><span aria-hidden="true">Catálogo</span></span></span></a></li>
+        <li><a href="#mayoreo"><span class="roll"><span class="roll__in"><span>Mayoreo</span><span aria-hidden="true">Mayoreo</span></span></span></a></li>
+        <li><a href="#faq"><span class="roll"><span class="roll__in"><span>Preguntas</span><span aria-hidden="true">Preguntas</span></span></span></a></li>
+        <li><a href="#contacto"><span class="roll"><span class="roll__in"><span>Contacto</span><span aria-hidden="true">Contacto</span></span></span></a></li>
+      </ul>
+    </nav>
+    <div class="hdr__actions">
+      <button class="cartbtn" type="button" data-cart-open aria-label="Abrir mi pedido">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg>
+        <span class="cartbtn__label">Mi pedido</span><b class="cartbtn__count" data-cart-count>0</b>
+      </button>
+      <span class="hdr__cta"><a class="btn btn--primary btn--sm" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20recibir%20el%20cat%C3%A1logo%20con%20precios%20de%20mayoreo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero mi catálogo</span><span aria-hidden="true">Quiero mi catálogo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></span>
+      <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="hdr__progress" aria-hidden="true"><i></i></div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav aria-label="Menú móvil">
+    <ul>
+      <li><a href="#sistema"><small class="mono">01</small>Sistema</a></li>
+      <li><a href="#catalogo"><small class="mono">02</small>Catálogo</a></li>
+      <li><a href="#mayoreo"><small class="mono">03</small>Mayoreo</a></li>
+      <li><a href="#faq"><small class="mono">04</small>Preguntas</a></li>
+      <li><a href="#contacto"><small class="mono">05</small>Contacto</a></li>
+    </ul>
+  </nav>
+  <p class="menu__foot mono">Excelencia en cada detalle · WhatsApp 954 183 3072</p>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title" data-section="Inicio">
+  <canvas class="hero__gl" id="gl" aria-hidden="true"></canvas>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__grid" aria-hidden="true"></div>
+
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <p class="kicker mono" data-hero="kicker"><i></i>Detallado automotriz · Mayoreo</p>
+      <h1 class="hero__title" id="hero-title" aria-label="Excelencia en cada detalle">
+        <span class="hl" aria-hidden="true"><span class="hl__in">Excelencia</span></span>
+        <span class="hl" aria-hidden="true"><span class="hl__in">en cada</span></span>
+        <span class="hl" aria-hidden="true"><span class="hl__in hl__in--chrome">detalle</span></span>
+      </h1>
+      <p class="hero__sub" data-hero="sub">Shampoos, ceras, pulidores y limpiadores concentrados para detallistas, lavaderos y distribuidores. Precios de mayoreo y capacitación para tu equipo.</p>
+      <div class="hero__cta" data-hero="cta">
+        <a class="btn btn--primary btn--lg" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20recibir%20el%20cat%C3%A1logo%20con%20precios%20de%20mayoreo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero mi catálogo de mayoreo</span><span aria-hidden="true">Quiero mi catálogo de mayoreo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#sistema" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Ver cómo se usa</span><span aria-hidden="true">Ver cómo se usa</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="hero__visual" data-hero="visual">
+      <div class="badge" id="badge">
+        <svg class="badge__ring" viewBox="0 0 400 400" aria-hidden="true">
+          <defs><path id="circ" d="M200,200 m-172,0 a172,172 0 1,1 344,0 a172,172 0 1,1 -344,0"/></defs>
+          <text><textPath href="#circ" textLength="1075" lengthAdjust="spacing">EXCELENCIA EN CADA DETALLE ★ PROLUXCAR ★ DETALLADO AUTOMOTRIZ ★ </textPath></text>
+        </svg>
+        <span class="badge__orbit" aria-hidden="true"></span>
+        <img class="badge__logo" src="img/logo.png" alt="Insignia de Proluxcar: pistones, rin y llaves cruzadas" width="900" height="900" fetchpriority="high">
+      </div>
+      <figure class="hcard hcard--a" data-depth="34"><img src="img/storm-pink.jpg" alt="Shampoo cerámico Storm Pink de Proluxcar" width="800" height="1000" loading="eager" decoding="async"></figure>
+      <figure class="hcard hcard--b" data-depth="58"><img src="img/bubble-blue.jpg" alt="Shampoo neutro Bubble Blue de Proluxcar" width="800" height="1000" loading="eager" decoding="async"></figure>
+      <figure class="hcard hcard--c" data-depth="22"><img src="img/nova-wax.jpg" alt="Cera líquida Nova Wax de Proluxcar" width="800" height="1000" loading="eager" decoding="async"></figure>
+      <span class="htag htag--1 mono" data-depth="70"><i></i>Dilución 1:4</span>
+      <span class="htag htag--2 mono" data-depth="46"><i></i>pH neutro</span>
+      <span class="htag htag--3 mono" data-depth="64"><i></i>Protección UV</span>
+    </div>
+  </div>
+
+  <div class="hero__foot">
+    <ul class="hero__facts mono" data-hero="facts">
+      <li><b>19</b> productos</li>
+      <li><b class="js-price">$68</b><span class="js-price"> mayoreo desde</span></li>
+      <li><b>3</b> niveles de pH</li>
+    </ul>
+    <a class="cue mono" href="#manifiesto" aria-label="Bajar a la siguiente sección"><span>Desliza</span><i></i></a>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="ticker" aria-label="Productos Proluxcar" role="region">
+  <div class="ticker__row ticker__row--a" data-ticker="-1"><div class="ticker__track"><span>Storm Pink</span><i>★</i><span>Bubble Blue</span><i>★</i><span>Storm Red</span><i>★</i><span>Nova Wax</span><i>★</i><span>Glass Cleaner</span><i>★</i><span>All Cleaner</span><i>★</i><span>APC Cleaner</span><i>★</i><span>Destroyer</span><i>★</i><span>Tireshine</span><i>★</i><span>Black Mamba</span><i>★</i><span>Int Shine</span><i>★</i><span>Aluclean</span><i>★</i><span>Ceramix Polish</span><i>★</i><span>Hydroshield</span><i>★</i></div></div>
+  <div class="ticker__row ticker__row--b" data-ticker="1" aria-hidden="true"><div class="ticker__track"><span>Prelavado</span><i>/</i><span>Descontaminación</span><i>/</i><span>Lavado de contacto</span><i>/</i><span>Pulido</span><i>/</i><span>Protección</span><i>/</i><span>Acabado</span><i>/</i><span>Prelavado</span><i>/</i><span>Descontaminación</span><i>/</i><span>Lavado de contacto</span><i>/</i><span>Pulido</span><i>/</i><span>Protección</span><i>/</i><span>Acabado</span><i>/</i></div></div>
+</div>
+
+<!-- ============ MANIFIESTO ============ -->
+<section class="sec manifesto" id="manifiesto" aria-labelledby="manifiesto-title" data-section="Manifiesto">
+  <div class="container">
+    <p class="eyebrow mono" data-reveal><span>[01]</span> Lo que hacemos</p>
+    <h2 class="manifesto__text" id="manifiesto-title" data-words>Un auto bien detallado se nota en cada centímetro. Por eso reunimos <b>fórmulas concentradas</b>, <b>fichas claras de uso</b> y <b>capacitación real</b>, para que detallistas, lavaderos y distribuidores entreguen <b>acabado espejo</b>, una y otra vez.</h2>
+    <ul class="stats" data-stagger>
+      <li data-reveal><b data-count="19">19</b><span>Productos en el catálogo</span></li>
+      <li data-reveal><b><span class="js-price">$</span><span data-count="68" class="js-price">68</span></b><span class="js-price">Mayoreo desde, por litro de shampoo</span></li>
+      <li data-reveal><b data-count="3">3</b><span>Niveles de pH: neutro, alcalino y ácido</span></li>
+      <li data-reveal><b><span data-count="1">1</span>:4</b><span>Dilución en espumador: rinde más por litro</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ SISTEMA (escena anclada) ============ -->
+<section class="sys" id="sistema" aria-labelledby="sys-title" data-section="Sistema">
+  <div class="sys__pin">
+    <div class="sys__glow" aria-hidden="true"></div>
+    <div class="container sys__wrap">
+      <header class="sys__head">
+        <p class="eyebrow mono"><span>[02]</span> El sistema</p>
+        <h2 class="h2" id="sys-title" data-split>Del prelavado al <em>acabado espejo</em>, producto por producto</h2>
+      </header>
+
+      <div class="sys__body">
+        <div class="sys__num" aria-hidden="true"><span id="sysNum">01</span></div>
+        <div class="sys__list">
+
+          <article class="stage" data-tint="63,169,255" data-n="01">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 01</b> / 06</p>
+              <h3 class="stage__title">Prelavado</h3>
+              <p class="stage__lead">Suelta la suciedad antes de tocar la pintura: espuma densa con shampoo concentrado y cañón de espuma.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="bubble-blue">Bubble Blue <small>pH neutro</small></button></li>
+                <li><button type="button" data-open="storm-red">Storm Red <small>pH alcalino</small></button></li>
+                <li><button type="button" data-open="canon-espuma">Cañón de espuma <small>1 L</small></button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> Dilución 1:4 en espumador. Siempre trabaja en sombra.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/canon-espuma.jpg" alt="Cañón de espuma de 1 litro de Proluxcar sobre una mesa de taller" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>Dilución 1:4</span><span>pH neutro / alcalino</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="stage" data-tint="163,91,255" data-n="02">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 02</b> / 06</p>
+              <h3 class="stage__title">Descontaminación</h3>
+              <p class="stage__lead">Óxido, polvo de balatas y grasa pesada en rines, chasis y motor. Sin tallar.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="aluclean">Aluclean <small>pH ácido</small></button></li>
+                <li><button type="button" data-open="destroyer">Destroyer <small>pH alcalino</small></button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> Aluclean: máximo 5 minutos y nunca sobre plásticos ni electrónicos.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/aluclean.jpg" alt="Aluclean limpiador férrico de Proluxcar bajo luces moradas" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>Máx. 5 min</span><span>pH ácido</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="stage" data-tint="255,79,163" data-n="03">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 03</b> / 06</p>
+              <h3 class="stage__title">Lavado de contacto</h3>
+              <p class="stage__lead">Shampoo cerámico y guante de microfibra: la pintura se limpia sin rayones y queda con protección hidrofóbica.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="storm-pink">Storm Pink <small>pH neutro</small></button></li>
+                <li><button type="button" data-open="guante-verde">Guante de microfibra</button></li>
+                <li><button type="button" data-open="microfibras">Microfibras pro <small>pack de 12</small></button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> 50 ml por cubeta. Más producto no es mejor lavado.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/guante-azul.jpg" alt="Guante de microfibra azul para lavado de contacto en un taller de detallado" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>50 ml / cubeta</span><span>Anti-rayones</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="stage" data-tint="255,179,71" data-n="04">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 04</b> / 06</p>
+              <h3 class="stage__title">Pulido</h3>
+              <p class="stage__lead">Una crema que quita los rayones superficiales y devuelve el terminado espejo.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="ceramix-polish">Ceramix Polish <small>200 g</small></button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> Aplica con microfibra y trabaja siempre en sombra.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/ceramix-polish.jpg" alt="Ceramix Polish de Proluxcar con pasos de aplicación y resultado de brillo espejo en un auto" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>Acabado espejo</span><span>200 g</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="stage" data-tint="255,210,31" data-n="05">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 05</b> / 06</p>
+              <h3 class="stage__title">Protección</h3>
+              <p class="stage__lead">Una capa protectora contra rayos UV y suciedad en la pintura, y contra la lluvia ácida en cristales.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="nova-wax">Nova Wax <small>500 ml</small></button></li>
+                <li><button type="button" data-open="hydroshield">Hydroshield <small>200 g</small></button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> Nova Wax es un lavado final concentrado, lista para usar.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/nova-wax.jpg" alt="Spray Nova Wax de Proluxcar sobre una mesa de un taller de detallado" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>Protección UV</span><span>Lista para usar</span></figcaption>
+            </figure>
+          </article>
+
+          <article class="stage" data-tint="225,29,46" data-n="06">
+            <div class="stage__body">
+              <p class="stage__idx mono"><b>Etapa 06</b> / 06</p>
+              <h3 class="stage__title">Acabado</h3>
+              <p class="stage__lead">Llantas mojadas, plásticos como nuevos, interiores limpios y cristales sin rayones.</p>
+              <ul class="stage__prods">
+                <li><button type="button" data-open="tireshine">Tireshine</button></li>
+                <li><button type="button" data-open="black-mamba-gel">Black Mamba</button></li>
+                <li><button type="button" data-open="int-shine">Int Shine</button></li>
+                <li><button type="button" data-open="apc-cleaner">APC Cleaner</button></li>
+                <li><button type="button" data-open="glass-cleaner">Glass Cleaner</button></li>
+              </ul>
+              <p class="stage__tip"><b class="mono">Tip pro</b> Tireshine: deja reposar 15 minutos antes de mover el auto.</p>
+            </div>
+            <figure class="stage__media">
+              <img src="img/black-mamba-gel.jpg" alt="Restaurador de plásticos Black Mamba de Proluxcar en un taller de detallado" width="800" height="1000" loading="lazy" decoding="async">
+              <figcaption class="hud mono"><span>Efecto natural</span><span>Hidrofóbico</span></figcaption>
+            </figure>
+          </article>
+
+        </div>
+        <nav class="sys__rail" aria-label="Etapas del sistema">
+          <i class="sys__fill" aria-hidden="true"></i>
+          <button type="button" data-go="0" aria-label="Etapa 1: Prelavado"><span class="mono">01</span></button>
+          <button type="button" data-go="1" aria-label="Etapa 2: Descontaminación"><span class="mono">02</span></button>
+          <button type="button" data-go="2" aria-label="Etapa 3: Lavado de contacto"><span class="mono">03</span></button>
+          <button type="button" data-go="3" aria-label="Etapa 4: Pulido"><span class="mono">04</span></button>
+          <button type="button" data-go="4" aria-label="Etapa 5: Protección"><span class="mono">05</span></button>
+          <button type="button" data-go="5" aria-label="Etapa 6: Acabado"><span class="mono">06</span></button>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PULE LA PINTURA (interactivo) ============ -->
+<section class="sec polish" id="pule" aria-labelledby="polish-title" data-section="Pruébalo">
+  <div class="container polish__grid">
+    <header class="polish__head">
+      <p class="eyebrow mono" data-reveal><span>[03]</span> Pruébalo</p>
+      <h2 class="h2" id="polish-title" data-split>Pule la pintura con tu <em>cursor</em></h2>
+      <p class="lead" data-reveal>Esto es lo que hace una crema pulidora: quita los rayones superficiales y deja un terminado espejo. Desliza el cursor (o tu dedo) sobre el panel.</p>
+      <div class="polish__meter" data-reveal>
+        <div class="meter" aria-hidden="true"><i id="meterBar"></i></div>
+        <p class="mono"><b id="meterVal">0</b>% acabado espejo</p>
+      </div>
+      <div class="polish__cta" data-reveal>
+        <a class="btn btn--primary btn--lg" href="#catalogo" data-magnet data-add-cta="ceramix-polish"><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero Ceramix Polish</span><span aria-hidden="true">Quiero Ceramix Polish</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="mono polish__hint">Crema de 200 g · <span class="js-price">$88 mayoreo · </span>acabado espejo</p>
+      </div>
+    </header>
+
+    <div class="polish__panel" id="polishPanel" role="img" aria-label="Panel de pintura con rayones que se pule al deslizar el cursor o el dedo sobre él">
+      <canvas id="pGloss" aria-hidden="true"></canvas>
+      <canvas id="pDull" aria-hidden="true"></canvas>
+      <div class="polish__tag mono" aria-hidden="true"><i></i><span id="polishState">Superficie con rayones</span></div>
+      <div class="polish__pad" id="pad" aria-hidden="true"><span class="mono">Pulir</span></div>
+      <button class="polish__reset mono" type="button" id="pReset">Reiniciar</button>
+      <i class="polish__corner polish__corner--tl" aria-hidden="true"></i><i class="polish__corner polish__corner--tr" aria-hidden="true"></i><i class="polish__corner polish__corner--bl" aria-hidden="true"></i><i class="polish__corner polish__corner--br" aria-hidden="true"></i>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTOR ============ -->
+<section class="sec finder" id="encuentra" aria-labelledby="finder-title" data-section="Encuentra">
+  <div class="container">
+    <header class="sec__head">
+      <p class="eyebrow mono" data-reveal><span>[04]</span> Encuentra tu producto</p>
+      <h2 class="h2" id="finder-title" data-split>¿Qué vas a <em>limpiar hoy</em>?</h2>
+      <p class="lead" data-reveal>Elige la superficie y te mostramos qué fórmula usar, cómo aplicarla y qué cuidar.</p>
+    </header>
+    <div class="finder__chips" role="group" aria-label="Superficie a limpiar" data-reveal>
+      <button class="schip is-on" type="button" data-surface="pintura" aria-pressed="true">Pintura</button>
+      <button class="schip" type="button" data-surface="rines" aria-pressed="false">Rines y chasis</button>
+      <button class="schip" type="button" data-surface="llantas" aria-pressed="false">Llantas</button>
+      <button class="schip" type="button" data-surface="motor" aria-pressed="false">Motor</button>
+      <button class="schip" type="button" data-surface="exteriores" aria-pressed="false">Plásticos exteriores</button>
+      <button class="schip" type="button" data-surface="interiores" aria-pressed="false">Interiores</button>
+      <button class="schip" type="button" data-surface="cristales" aria-pressed="false">Cristales y pantallas</button>
+    </div>
+    <div class="finder__out" id="finderOut" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ CATÁLOGO ============ -->
+<section class="sec cat" id="catalogo" aria-labelledby="cat-title" data-section="Catálogo">
+  <div class="container">
+    <header class="sec__head sec__head--row">
+      <div>
+        <p class="eyebrow mono" data-reveal><span>[05]</span> Catálogo de mayoreo</p>
+        <h2 class="h2" id="cat-title" data-split>19 productos. Tu pedido, <em>a tu medida</em></h2>
+      </div>
+      <p class="lead" data-reveal>Toca un producto para ver su ficha completa y agrega lo que necesitas a tu pedido. Lo cotizamos por WhatsApp.</p>
+    </header>
+
+    <div class="cat__bar" data-reveal>
+      <div class="cat__chips" role="group" aria-label="Filtrar por línea">
+<button class="fchip is-on" type="button" data-filter="all" aria-pressed="true">Todo <i>19</i></button>
+<button class="fchip" type="button" data-filter="lavado" aria-pressed="false">Lavado <i>4</i></button>
+<button class="fchip" type="button" data-filter="proteccion" aria-pressed="false">Protección y brillo <i>3</i></button>
+<button class="fchip" type="button" data-filter="interior" aria-pressed="false">Interiores y cristales <i>4</i></button>
+<button class="fchip" type="button" data-filter="pesada" aria-pressed="false">Limpieza pesada <i>3</i></button>
+<button class="fchip" type="button" data-filter="exterior" aria-pressed="false">Llantas y plásticos <i>2</i></button>
+<button class="fchip" type="button" data-filter="herramientas" aria-pressed="false">Herramientas <i>3</i></button>
+      </div>
+      <label class="search"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><span class="sr">Buscar producto</span><input id="q" type="search" placeholder="Buscar producto…" autocomplete="off"></label>
+    </div>
+    <p class="cat__count mono" aria-live="polite">Mostrando <b id="count">19</b> de 19 productos</p>
+
+    <ul class="cat__grid" id="grid">
+<li class="pcard" data-reveal data-id="storm-pink" data-cat="lavado" data-name="storm pink shampoo cerámico shampoo cerámico storm pink" style="--tint:255,79,163"><button class="pcard__open" type="button" data-open="storm-pink" aria-label="Ver ficha: Shampoo Cerámico Storm Pink"><span class="pcard__media"><img src="img/storm-pink.jpg" alt="Shampoo Cerámico Storm Pink de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Lavado</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Shampoo cerámico</p><h3 class="pcard__name">Storm Pink</h3><p class="pcard__meta mono"><span>1 L</span><span>pH neutro</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$85</b></p><button class="pcard__add" type="button" data-add="storm-pink" aria-label="Agregar Shampoo Cerámico Storm Pink a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="bubble-blue" data-cat="lavado" data-name="bubble blue shampoo neutro shampoo neutro bubble blue" style="--tint:63,169,255"><button class="pcard__open" type="button" data-open="bubble-blue" aria-label="Ver ficha: Shampoo Neutro Bubble Blue"><span class="pcard__media"><img src="img/bubble-blue.jpg" alt="Shampoo Neutro Bubble Blue de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Lavado</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Shampoo neutro</p><h3 class="pcard__name">Bubble Blue</h3><p class="pcard__meta mono"><span>1 L</span><span>pH neutro</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$68</b></p><button class="pcard__add" type="button" data-add="bubble-blue" aria-label="Agregar Shampoo Neutro Bubble Blue a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="storm-red" data-cat="lavado" data-name="storm red shampoo alcalino shampoo alcalino storm red" style="--tint:255,59,78"><button class="pcard__open" type="button" data-open="storm-red" aria-label="Ver ficha: Shampoo Alcalino Storm Red"><span class="pcard__media"><img src="img/storm-red.jpg" alt="Shampoo Alcalino Storm Red de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Lavado</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Shampoo alcalino</p><h3 class="pcard__name">Storm Red</h3><p class="pcard__meta mono"><span>1 L</span><span>pH alcalino</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="storm-red" aria-label="Agregar Shampoo Alcalino Storm Red a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="canon-espuma" data-cat="lavado" data-name="cañón de espuma prelavado cañón de espuma" style="--tint:140,200,255"><button class="pcard__open" type="button" data-open="canon-espuma" aria-label="Ver ficha: Cañón de Espuma"><span class="pcard__media"><img src="img/canon-espuma.jpg" alt="Cañón de Espuma de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Lavado</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Prelavado</p><h3 class="pcard__name">Cañón de espuma</h3><p class="pcard__meta mono"><span>1 L</span><span>Con accesorios</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo 6+ pzas</small><b>$500</b><em>unidad $650</em></p><button class="pcard__add" type="button" data-add="canon-espuma" aria-label="Agregar Cañón de Espuma a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="nova-wax" data-cat="proteccion" data-name="nova wax cera líquida cera líquida nova wax" style="--tint:255,210,31"><button class="pcard__open" type="button" data-open="nova-wax" aria-label="Ver ficha: Cera Líquida Nova Wax"><span class="pcard__media"><img src="img/nova-wax.jpg" alt="Cera Líquida Nova Wax de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Protección y brillo</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Cera líquida</p><h3 class="pcard__name">Nova Wax</h3><p class="pcard__meta mono"><span>500 ml</span><span>pH neutro</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$85</b></p><button class="pcard__add" type="button" data-add="nova-wax" aria-label="Agregar Cera Líquida Nova Wax a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-fit data-id="ceramix-polish" data-cat="proteccion" data-name="ceramix polish crema pulidora ceramix polish" style="--tint:255,179,71;--mbg:#000"><button class="pcard__open" type="button" data-open="ceramix-polish" aria-label="Ver ficha: Ceramix Polish"><span class="pcard__media"><img src="img/ceramix-polish.jpg" alt="Ceramix Polish de Proluxcar, 200 g" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Protección y brillo</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Crema pulidora</p><h3 class="pcard__name">Ceramix Polish</h3><p class="pcard__meta mono"><span>200 g</span><span>Acabado espejo</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="ceramix-polish" aria-label="Agregar Ceramix Polish a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-fit data-id="hydroshield" data-cat="proteccion" data-name="hydroshield crema quita gotas hydroshield crema quita gotas" style="--tint:163,91,255;--mbg:#000"><button class="pcard__open" type="button" data-open="hydroshield" aria-label="Ver ficha: Hydroshield Crema Quita Gotas"><span class="pcard__media"><img src="img/hydroshield.jpg" alt="Hydroshield Crema Quita Gotas de Proluxcar, 200 g" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Protección y brillo</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Crema quita gotas</p><h3 class="pcard__name">Hydroshield</h3><p class="pcard__meta mono"><span>200 g</span><span>Cristales</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$120</b></p><button class="pcard__add" type="button" data-add="hydroshield" aria-label="Agregar Hydroshield Crema Quita Gotas a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="glass-cleaner" data-cat="interior" data-name="glass cleaner limpiador de cristales limpiador glass cleaner" style="--tint:79,216,255"><button class="pcard__open" type="button" data-open="glass-cleaner" aria-label="Ver ficha: Limpiador Glass Cleaner"><span class="pcard__media"><img src="img/glass-cleaner.jpg" alt="Limpiador Glass Cleaner de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Interiores y cristales</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Limpiador de cristales</p><h3 class="pcard__name">Glass Cleaner</h3><p class="pcard__meta mono"><span>500 ml</span><span>Sin rayones</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$95</b></p><button class="pcard__add" type="button" data-add="glass-cleaner" aria-label="Agregar Limpiador Glass Cleaner a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="apc-cleaner" data-cat="interior" data-name="apc cleaner limpiador de interiores apc cleaner" style="--tint:255,138,31"><button class="pcard__open" type="button" data-open="apc-cleaner" aria-label="Ver ficha: APC Cleaner"><span class="pcard__media"><img src="img/apc-cleaner.jpg" alt="APC Cleaner de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Interiores y cristales</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Limpiador de interiores</p><h3 class="pcard__name">APC Cleaner</h3><p class="pcard__meta mono"><span>500 ml</span><span>pH neutro</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$85</b></p><button class="pcard__add" type="button" data-add="apc-cleaner" aria-label="Agregar APC Cleaner a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="int-shine" data-cat="interior" data-name="int shine abrillantador de plásticos int shine abrillantador de plásticos" style="--tint:52,224,192"><button class="pcard__open" type="button" data-open="int-shine" aria-label="Ver ficha: Int Shine Abrillantador de Plásticos"><span class="pcard__media"><img src="img/int-shine.jpg" alt="Int Shine Abrillantador de Plásticos de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Interiores y cristales</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Abrillantador de plásticos</p><h3 class="pcard__name">Int Shine</h3><p class="pcard__meta mono"><span>500 ml</span><span>pH neutro</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="int-shine" aria-label="Agregar Int Shine Abrillantador de Plásticos a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="black-mamba-crema" data-cat="interior" data-name="black mamba crema restaurador · interiores restaurador de plásticos black mamba (crema)" style="--tint:225,29,46"><button class="pcard__open" type="button" data-open="black-mamba-crema" aria-label="Ver ficha: Restaurador de Plásticos Black Mamba (crema)"><span class="pcard__media"><img src="img/black-mamba-crema.jpg" alt="Restaurador de Plásticos Black Mamba (crema) de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Interiores y cristales</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Restaurador · interiores</p><h3 class="pcard__name">Black Mamba Crema</h3><p class="pcard__meta mono"><span>500 ml</span><span>Base agua</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="black-mamba-crema" aria-label="Agregar Restaurador de Plásticos Black Mamba (crema) a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="black-mamba-gel" data-cat="exterior" data-name="black mamba gel restaurador · exteriores restaurador de plásticos black mamba (gel)" style="--tint:225,29,46"><button class="pcard__open" type="button" data-open="black-mamba-gel" aria-label="Ver ficha: Restaurador de Plásticos Black Mamba (gel)"><span class="pcard__media"><img src="img/black-mamba-gel.jpg" alt="Restaurador de Plásticos Black Mamba (gel) de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Llantas y plásticos</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Restaurador · exteriores</p><h3 class="pcard__name">Black Mamba Gel</h3><p class="pcard__meta mono"><span>500 ml</span><span>Efecto natural</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="black-mamba-gel" aria-label="Agregar Restaurador de Plásticos Black Mamba (gel) a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="tireshine" data-cat="exterior" data-name="tireshine abrillantador de llantas abrillantador para llantas tireshine" style="--tint:255,210,31"><button class="pcard__open" type="button" data-open="tireshine" aria-label="Ver ficha: Abrillantador para Llantas Tireshine"><span class="pcard__media"><img src="img/tireshine.jpg" alt="Abrillantador para Llantas Tireshine de Proluxcar, 500 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Llantas y plásticos</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Abrillantador de llantas</p><h3 class="pcard__name">Tireshine</h3><p class="pcard__meta mono"><span>500 ml</span><span>Hidrofóbico</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="tireshine" aria-label="Agregar Abrillantador para Llantas Tireshine a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="all-cleaner" data-cat="pesada" data-name="all cleaner apc multipropósito en gel all cleaner apc multipropósito en gel" style="--tint:182,255,46"><button class="pcard__open" type="button" data-open="all-cleaner" aria-label="Ver ficha: All Cleaner APC Multipropósito en Gel"><span class="pcard__media"><img src="img/all-cleaner.jpg" alt="All Cleaner APC Multipropósito en Gel de Proluxcar, 960 ml" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Limpieza pesada</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">APC multipropósito en gel</p><h3 class="pcard__name">All Cleaner</h3><p class="pcard__meta mono"><span>960 ml</span><span>pH alcalino</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$88</b></p><button class="pcard__add" type="button" data-add="all-cleaner" aria-label="Agregar All Cleaner APC Multipropósito en Gel a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="destroyer" data-cat="pesada" data-name="destroyer desengrasante industrial desengrasante industrial destroyer" style="--tint:255,75,58"><button class="pcard__open" type="button" data-open="destroyer" aria-label="Ver ficha: Desengrasante Industrial Destroyer"><span class="pcard__media"><img src="img/destroyer.jpg" alt="Desengrasante Industrial Destroyer de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Limpieza pesada</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Desengrasante industrial</p><h3 class="pcard__name">Destroyer</h3><p class="pcard__meta mono"><span>1 L</span><span>pH alcalino</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$85</b></p><button class="pcard__add" type="button" data-add="destroyer" aria-label="Agregar Desengrasante Industrial Destroyer a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="aluclean" data-cat="pesada" data-name="aluclean limpiador férrico aluclean limpiador férrico" style="--tint:163,91,255"><button class="pcard__open" type="button" data-open="aluclean" aria-label="Ver ficha: Aluclean Limpiador Férrico"><span class="pcard__media"><img src="img/aluclean.jpg" alt="Aluclean Limpiador Férrico de Proluxcar, 1 L" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Limpieza pesada</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Limpiador férrico</p><h3 class="pcard__name">Aluclean</h3><p class="pcard__meta mono"><span>1 L</span><span>pH ácido</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$125</b></p><button class="pcard__add" type="button" data-add="aluclean" aria-label="Agregar Aluclean Limpiador Férrico a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-fit data-id="brochas" data-cat="herramientas" data-name="brochas de jabalí pack de 5 piezas brochas pelo de jabalí (pack de 5)" style="--tint:214,170,110;--mbg:#fff"><button class="pcard__open" type="button" data-open="brochas" aria-label="Ver ficha: Brochas Pelo de Jabalí (pack de 5)"><span class="pcard__media"><img src="img/brochas.jpg" alt="Brochas Pelo de Jabalí (pack de 5) de Proluxcar, 5 pzas" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Herramientas</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Pack de 5 piezas</p><h3 class="pcard__name">Brochas de jabalí</h3><p class="pcard__meta mono"><span>5 pzas</span><span>Detallado</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$135</b></p><button class="pcard__add" type="button" data-add="brochas" aria-label="Agregar Brochas Pelo de Jabalí (pack de 5) a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-fit data-id="microfibras" data-cat="herramientas" data-name="microfibras pro pack de 12 piezas microfibras profesionales (pack de 12)" style="--tint:255,120,40;--mbg:#111"><button class="pcard__open" type="button" data-open="microfibras" aria-label="Ver ficha: Microfibras Profesionales (pack de 12)"><span class="pcard__media"><img src="img/microfibras.jpg" alt="Microfibras Profesionales (pack de 12) de Proluxcar, 12 pzas" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Herramientas</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Pack de 12 piezas</p><h3 class="pcard__name">Microfibras Pro</h3><p class="pcard__meta mono"><span>12 pzas</span><span>Alta absorción</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo</small><b>$192</b></p><button class="pcard__add" type="button" data-add="microfibras" aria-label="Agregar Microfibras Profesionales (pack de 12) a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+<li class="pcard" data-reveal data-id="guante-verde" data-cat="herramientas" data-name="guante de microfibra lavado de contacto guante de microfibra para lavado" style="--tint:182,255,46"><button class="pcard__open" type="button" data-open="guante-verde" aria-label="Ver ficha: Guante de Microfibra para Lavado"><span class="pcard__media"><img src="img/guante-verde.jpg" alt="Guante de Microfibra para Lavado de Proluxcar, 1 pza" loading="lazy" decoding="async" width="800" height="1000"></span><span class="pcard__glare" aria-hidden="true"></span><span class="pcard__cat mono">Herramientas</span><span class="pcard__view mono" aria-hidden="true">Ver ficha</span></button><div class="pcard__body"><p class="pcard__type mono">Lavado de contacto</p><h3 class="pcard__name">Guante de microfibra</h3><p class="pcard__meta mono"><span>1 pza</span><span>Anti-rayones</span></p><div class="pcard__foot"><p class="pcard__price js-price"><small>Mayoreo 6+ pzas</small><b>$95</b></p><button class="pcard__add" type="button" data-add="guante-verde" aria-label="Agregar Guante de Microfibra para Lavado a mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg><span>Pedido</span></button></div></div></li>
+    </ul>
+    <p class="cat__empty" id="empty" hidden>No encontramos ese producto. Prueba con otra palabra o cuéntanos qué buscas por WhatsApp.</p>
+
+    <div class="cat__foot" data-reveal>
+      <p class="cat__note js-price">Precios de mayoreo en MXN según el catálogo Proluxcar. Confirma disponibilidad y volumen por WhatsApp.</p>
+      <div class="cat__actions">
+        <button class="btn btn--primary btn--lg" type="button" data-cart-open data-magnet><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Armar mi pedido</span><span aria-hidden="true">Armar mi pedido</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        <a class="btn btn--ghost btn--lg" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20el%20cat%C3%A1logo%20completo%20con%20precios%20de%20mayoreo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Pedir el catálogo completo</span><span aria-hidden="true">Pedir el catálogo completo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAYOREO + CAPACITACIÓN ============ -->
+<section class="sec bulk" id="mayoreo" aria-labelledby="bulk-title" data-section="Mayoreo">
+  <div class="container">
+    <header class="sec__head">
+      <p class="eyebrow mono" data-reveal><span>[06]</span> Mayoreo y capacitación</p>
+      <h2 class="h2" id="bulk-title" data-split>Tú pones el taller. Nosotros, el <em>producto y el método</em></h2>
+    </header>
+
+    <div class="bulk__grid">
+      <article class="panel panel--price" data-reveal>
+        <p class="panel__tag mono">Precios de mayoreo</p>
+        <p class="bulk__big js-price"><span>desde</span><b>$<span data-count="68">68</span></b><small>MXN por litro de shampoo</small></p>
+        <ul class="ticks">
+          <li>Precios de mayoreo en todo el catálogo</li>
+          <li>Cañón de espuma a $500 desde 6 piezas (unidad $650)</li>
+          <li>Guante de microfibra a $95 desde 6 piezas</li>
+          <li>Arma tu pedido en la web y lo cotizamos por WhatsApp</li>
+        </ul>
+        <a class="btn btn--primary" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20conocer%20sus%20precios%20de%20mayoreo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero precios de mayoreo</span><span aria-hidden="true">Quiero precios de mayoreo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+
+      <article class="panel panel--train" data-reveal>
+        <p class="panel__tag mono">Capacitación</p>
+        <h3 class="panel__title">Tu equipo aprende a usarlos como profesional</h3>
+        <p class="panel__lead">Ofrecemos servicios de capacitación sobre nuestros productos: qué fórmula va en cada superficie, cómo diluirla y cuánto tiempo trabajarla.</p>
+        <div class="phscale" aria-label="Guía de pH de los productos">
+          <div class="phscale__bar" aria-hidden="true"><i class="phscale__dot"></i></div>
+          <div class="phscale__cols">
+            <div class="phscale__col phscale__col--acid"><b>Ácido</b><span>Aluclean</span></div>
+            <div class="phscale__col phscale__col--neutral"><b>Neutro</b><span>Storm Pink · Bubble Blue · Nova Wax · APC Cleaner · Int Shine</span></div>
+            <div class="phscale__col phscale__col--alk"><b>Alcalino</b><span>Storm Red · Destroyer · All Cleaner</span></div>
+          </div>
+        </div>
+        <ul class="rules">
+          <li><b class="mono">01</b><div><h4>Siempre en sombra</h4><p>Evita que el producto se seque sobre la pintura y deje marcas.</p></div></li>
+          <li><b class="mono">02</b><div><h4>Respeta la dilución</h4><p>Storm Pink y Bubble Blue rinden 1:4 en espumador o 50 ml por cubeta.</p></div></li>
+          <li><b class="mono">03</b><div><h4>Aluclean: máximo 5 minutos</h4><p>Es ácido: nunca sobre plásticos ni electrónicos.</p></div></li>
+          <li><b class="mono">04</b><div><h4>Tireshine: 15 minutos de reposo</h4><p>Descontamina y limpia antes; deja reposar antes de mover el auto.</p></div></li>
+        </ul>
+        <a class="btn btn--ghost" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20capacitaci%C3%B3n%20de%20sus%20productos%20para%20mi%20equipo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero capacitación para mi equipo</span><span aria-hidden="true">Quiero capacitación para mi equipo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<section class="sec proc" id="proceso" aria-labelledby="proc-title" data-section="Proceso">
+  <div class="container">
+    <header class="sec__head">
+      <p class="eyebrow mono" data-reveal><span>[07]</span> Cómo surtimos</p>
+      <h2 class="h2" id="proc-title" data-split>Surte tu taller en <em>4 pasos</em></h2>
+    </header>
+    <ol class="proc__list">
+      <li class="proc__step" data-reveal><b class="mono">01</b><h3>Pides el catálogo</h3><p>Escríbenos por WhatsApp y recibe fichas, aplicaciones y precios de mayoreo.</p></li>
+      <li class="proc__step" data-reveal><b class="mono">02</b><h3>Armas tu pedido</h3><p>Elige productos y cantidades en esta web, o dinos qué necesitas por el chat.</p></li>
+      <li class="proc__step" data-reveal><b class="mono">03</b><h3>Confirmamos</h3><p>Te confirmamos precio y disponibilidad por el mismo chat.</p></li>
+      <li class="proc__step" data-reveal><b class="mono">04</b><h3>Te enseñamos a usarlos</h3><p>Resolvemos tus dudas y capacitamos a tu equipo para sacarles el máximo.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq" aria-labelledby="faq-title" data-section="Preguntas">
+  <div class="container faq__grid">
+    <header class="sec__head">
+      <p class="eyebrow mono" data-reveal><span>[08]</span> Dudas frecuentes</p>
+      <h2 class="h2" id="faq-title" data-split>Resolvemos lo que <em>te estás preguntando</em></h2>
+      <p class="lead" data-reveal>¿Te quedó otra duda? Escríbenos y te respondemos por WhatsApp.</p>
+    </header>
+    <div class="faq__list">
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa1" id="fq1"><span>¿Los precios del catálogo son de mayoreo?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa1" role="region" aria-labelledby="fq1"><div><p>Sí. En el cañón de espuma ($500) y el guante de microfibra ($95) el precio de mayoreo aplica a partir de 6 piezas. Cuéntanos tu volumen y lo revisamos.</p></div></div></div>
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa2" id="fq2"><span>¿Ofrecen capacitación?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa2" role="region" aria-labelledby="fq2"><div><p>Sí, ofrecemos servicios de capacitación sobre nuestros productos: diluciones, tiempos de aplicación y qué fórmula usar en cada superficie. Escríbenos y lo platicamos.</p></div></div></div>
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa3" id="fq3"><span>¿Cómo diluyo los shampoos?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa3" role="region" aria-labelledby="fq3"><div><p>Storm Pink y Bubble Blue: 1 parte de producto por 4 de agua en espumador, o 50 ml por cubeta en lavado de contacto. Storm Red se ajusta según qué tan sucio esté el auto.</p></div></div></div>
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa4" id="fq4"><span>¿Por qué siempre hay que trabajar en sombra?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa4" role="region" aria-labelledby="fq4"><div><p>Para que el producto no se seque sobre la pintura y deje marcas. Aplica especialmente a shampoos, desengrasantes, limpiadores, pulido y cremas.</p></div></div></div>
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa5" id="fq5"><span>¿Puedo usar Aluclean en cualquier superficie?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa5" role="region" aria-labelledby="fq5"><div><p>No. Es un limpiador férrico ácido: se trabaja en sombra, por máximo 5 minutos, y nunca sobre plásticos ni superficies electrónicas.</p></div></div></div>
+      <div class="faq__item" data-reveal><h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="fa6" id="fq6"><span>¿Cómo hago mi pedido?</span><i class="faq__ico" aria-hidden="true"></i></button></h3><div class="faq__a" id="fa6" role="region" aria-labelledby="fq6"><div><p>Arma tu pedido en el catálogo y envíalo por WhatsApp, o pide el catálogo y dinos qué productos y cantidades necesitas. Te confirmamos precio y disponibilidad por el mismo chat.</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="finale" id="listo" aria-labelledby="finale-title" data-section="Listo">
+  <div class="finale__bg" aria-hidden="true"><img src="img/logo.png" alt="" width="900" height="900" loading="lazy"></div>
+  <div class="finale__glow" aria-hidden="true"></div>
+  <div class="container finale__in">
+    <p class="eyebrow mono" data-reveal><span>[09]</span> Siguiente paso</p>
+    <h2 class="finale__title" id="finale-title" data-split>¿Listo para <em>surtirte</em>?</h2>
+    <p class="lead" data-reveal>Pide el catálogo con precios de mayoreo y resuelve tus dudas directo con un asesor.</p>
+    <div class="finale__cta" data-reveal>
+      <a class="btn btn--primary btn--lg" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20recibir%20el%20cat%C3%A1logo%20con%20precios%20de%20mayoreo." target="_blank" rel="noopener" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Sí, quiero mi catálogo</span><span aria-hidden="true">Sí, quiero mi catálogo</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--ghost btn--lg" href="#catalogo" data-magnet ><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Ver los productos</span><span aria-hidden="true">Ver los productos</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="sec contact" id="contacto" aria-labelledby="contact-title" data-section="Contacto">
+  <div class="container contact__grid">
+    <header class="contact__head">
+      <p class="eyebrow mono" data-reveal><span>[10]</span> Contacto</p>
+      <h2 class="h2" id="contact-title" data-split>Cuéntanos qué necesitas <em>y lo resolvemos</em></h2>
+      <p class="lead" data-reveal>Déjanos tus datos y abrimos una conversación por WhatsApp con tu mensaje ya escrito.</p>
+      <ul class="contact__info" data-reveal>
+        <li><span class="mono">WhatsApp</span><a href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20informaci%C3%B3n%20de%20sus%20productos." target="_blank" rel="noopener">954 183 3072</a></li>
+        <li><span class="mono">Atención</span><b>Respuesta directa por chat</b></li>
+      </ul>
+    </header>
+
+    <form class="form" id="waForm" novalidate data-reveal>
+      <p class="form__title">Tu cotización de mayoreo</p>
+      <div class="field"><label for="f-name">Tu nombre</label><input id="f-name" name="name" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" required><small class="field__err" role="alert"></small></div>
+      <fieldset class="field"><legend>Soy…</legend>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="who" value="Detallista" checked><span>Detallista</span></label>
+          <label class="opt"><input type="radio" name="who" value="Lavadero"><span>Lavadero</span></label>
+          <label class="opt"><input type="radio" name="who" value="Distribuidor"><span>Distribuidor</span></label>
+          <label class="opt"><input type="radio" name="who" value="Otro"><span>Otro</span></label>
+        </div>
+      </fieldset>
+      <fieldset class="field"><legend>Me interesa</legend>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="want" value="Lavado"><span>Lavado</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Protección y brillo"><span>Protección y brillo</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Interiores y cristales"><span>Interiores y cristales</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Limpieza pesada"><span>Limpieza pesada</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Llantas y plásticos"><span>Llantas y plásticos</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Herramientas"><span>Herramientas</span></label>
+          <label class="opt"><input type="checkbox" name="want" value="Capacitación"><span>Capacitación</span></label>
+        </div>
+      </fieldset>
+      <div class="field"><label for="f-msg">Cuéntanos qué necesitas</label><textarea id="f-msg" name="msg" rows="4" placeholder="Ej. Quiero cotizar 12 piezas de Storm Pink y un cañón de espuma…"></textarea></div>
+      <p class="form__order" data-form-order hidden></p>
+      <button class="btn btn--primary btn--lg btn--block" type="submit" data-magnet><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Quiero que me contacten</span><span aria-hidden="true">Quiero que me contacten</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <p class="form__note">Se abrirá WhatsApp con tu mensaje listo. Sin compromiso.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot" data-section="Pie">
+  <div class="container foot__top">
+    <div class="foot__brand">
+      <a class="brand" href="#inicio" aria-label="Proluxcar, volver arriba"><img src="img/logo.png" alt="" width="52" height="52"><span>Proluxcar</span></a>
+      <p>Excelencia en cada detalle. Productos de detallado automotriz con precios de mayoreo y capacitación.</p>
+    </div>
+    <nav class="foot__nav" aria-label="Pie de página">
+      <p class="mono">Explora</p>
+      <ul><li><a href="#sistema">Sistema</a></li><li><a href="#catalogo">Catálogo</a></li><li><a href="#mayoreo">Mayoreo y capacitación</a></li><li><a href="#faq">Preguntas</a></li></ul>
+    </nav>
+    <div class="foot__nav">
+      <p class="mono">Contacto</p>
+      <ul><li><a href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20informaci%C3%B3n%20de%20sus%20productos." target="_blank" rel="noopener">WhatsApp · 954 183 3072</a></li></ul>
+    </div>
+  </div>
+  <div class="foot__word" aria-hidden="true"><span>Proluxcar</span></div>
+  <div class="container foot__bottom mono"><span>© 2026 Proluxcar. Todos los derechos reservados.</span><a href="#inicio" data-top>Volver arriba ↑</a></div>
+</footer>
+
+<!-- ============ DIÁLOGOS ============ -->
+<dialog class="modal" id="pmodal" aria-labelledby="pm-title">
+  <div class="modal__shell">
+    <button class="modal__close" type="button" data-close aria-label="Cerrar ficha"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <div class="modal__media"><img id="pm-img" src="" alt="" width="800" height="1000"></div>
+    <div class="modal__body" id="pm-body"></div>
+  </div>
+</dialog>
+
+<dialog class="drawer" id="cart" aria-labelledby="cart-title">
+  <div class="drawer__shell">
+    <header class="drawer__head">
+      <div><p class="mono">Mayoreo</p><h2 id="cart-title">Mi pedido</h2></div>
+      <button class="modal__close" type="button" data-close aria-label="Cerrar mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    </header>
+    <div class="drawer__list" id="cartList"></div>
+    <footer class="drawer__foot">
+      <div class="drawer__total js-price"><span class="mono">Subtotal referencial</span><b id="cartTotal">$0</b></div>
+      <p class="drawer__note js-price">Precios de mayoreo en MXN. Volumen, disponibilidad y precio final se confirman por WhatsApp.</p>
+      <a class="btn btn--primary btn--lg btn--block" id="cartSend" href="#" target="_blank" rel="noopener"><span class="btn__bg"></span><span class="btn__txt"><span class="roll"><span class="roll__in"><span>Enviar pedido por WhatsApp</span><span aria-hidden="true">Enviar pedido por WhatsApp</span></span></span></span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <button class="drawer__clear mono" type="button" id="cartClear">Vaciar pedido</button>
+    </footer>
+  </div>
+</dialog>
+
+<!-- ============ FLOTANTES ============ -->
+<button class="cartpill" type="button" data-cart-open hidden aria-label="Abrir mi pedido"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7L6 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span>Mi pedido</span><b data-cart-count>0</b></button>
+<a class="wa-float" href="https://wa.me/529541833072?text=Hola%20Proluxcar%2C%20quiero%20recibir%20el%20cat%C3%A1logo%20con%20precios%20de%20mayoreo." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp a Proluxcar" data-magnet>
+  <span class="wa-float__tip">¿Te paso el catálogo?</span>
+  <span class="wa-float__btn"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.29.6 4.52 1.74 6.49L3 29l6.68-1.75A12.97 12.97 0 0 0 16.04 29C23.22 29 29.05 23.18 29.05 16S23.22 3 16.04 3zm0 23.8c-1.95 0-3.85-.53-5.51-1.52l-.4-.23-3.97 1.04 1.06-3.87-.26-.4A10.76 10.76 0 0 1 5.23 16c0-5.96 4.85-10.8 10.81-10.8S26.85 10.04 26.85 16s-4.85 10.8-10.81 10.8zm5.92-8.08c-.32-.16-1.92-.95-2.22-1.05-.3-.11-.51-.16-.73.16-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.32-.16-1.37-.5-2.6-1.6-.96-.86-1.6-1.91-1.79-2.23-.19-.32-.02-.5.14-.66.15-.14.32-.38.49-.57.16-.19.22-.32.32-.54.11-.22.05-.4-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.54-.73-.55h-.62c-.22 0-.57.08-.87.4-.3.32-1.14 1.12-1.14 2.73s1.17 3.17 1.33 3.39c.16.22 2.3 3.51 5.57 4.92.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.92-.78 2.19-1.54.27-.76.27-1.4.19-1.54-.08-.13-.3-.21-.62-.37z"/></svg></span>
+</a>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="cursor" aria-hidden="true"><i class="cursor__dot"></i><i class="cursor__ring"><span></span></i></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="hud-sec mono" aria-hidden="true"><i></i><span id="hudName">Inicio</span></div>
+
+<script type="application/json" id="data">{"wa":"529541833072","prices":true,"products":[{"id":"storm-pink","brand":"Storm Pink","type":"Shampoo cerámico","name":"Shampoo Cerámico Storm Pink","cat":"lavado","pres":"1 L","ph":"pH neutro","price":85,"tint":"255,79,163","desc":"Cuida y protege la pintura creando una protección hidrofóbica. Diseñado para prelavado con espumador y lavado en cubeta.","specs":[["Presentación","1 litro"],["pH","Neutro"],["Dilución","1:4 en espumador · 50 ml por cubeta"],["Acabado","Protección hidrofóbica"],["Recomendación","Trabajar siempre en sombra"]],"fit":"","catLabel":"Lavado","img":"img/storm-pink.jpg","base":null,"minQty":0},{"id":"bubble-blue","brand":"Bubble Blue","type":"Shampoo neutro","name":"Shampoo Neutro Bubble Blue","cat":"lavado","pres":"1 L","ph":"pH neutro","price":68,"tint":"63,169,255","desc":"Shampoo neutro concentrado, ideal para el prelavado: desprende la suciedad antes del lavado de contacto.","specs":[["Presentación","1 litro"],["pH","Neutro"],["Dilución","1:4 en espumador · 50 ml por cubeta"],["Uso","Prelavado"],["Recomendación","Trabajar siempre en sombra"]],"fit":"","catLabel":"Lavado","img":"img/bubble-blue.jpg","base":null,"minQty":0},{"id":"storm-red","brand":"Storm Red","type":"Shampoo alcalino","name":"Shampoo Alcalino Storm Red","cat":"lavado","pres":"1 L","ph":"pH alcalino","price":88,"tint":"255,59,78","desc":"Shampoo alcalino para prelavado con espumador: elimina la suciedad pesada antes del lavado de contacto.","specs":[["Presentación","1 litro"],["pH","Alcalino"],["Dilución","Según qué tan sucio esté el auto"],["Uso","Prelavado con espumador"],["Precaución","Trabajar en sombra para evitar el secado sobre la pintura"]],"fit":"","catLabel":"Lavado","img":"img/storm-red.jpg","base":null,"minQty":0},{"id":"canon-espuma","brand":"Cañón de espuma","type":"Prelavado","name":"Cañón de Espuma","cat":"lavado","pres":"1 L","ph":"Con accesorios","price":500,"base":650,"minQty":6,"tint":"140,200,255","desc":"Cañón de espuma de 1 litro con sus accesorios. Ideal para el prelavado, bañando el auto con espuma densa.","specs":[["Capacidad","1 litro"],["Incluye","Accesorios"],["Uso","Prelavado con espuma densa"],["Mayoreo","$500 desde 6 piezas · unidad $650"]],"fit":"","catLabel":"Lavado","img":"img/canon-espuma.jpg"},{"id":"nova-wax","brand":"Nova Wax","type":"Cera líquida","name":"Cera Líquida Nova Wax","cat":"proteccion","pres":"500 ml","ph":"pH neutro","price":85,"tint":"255,210,31","desc":"Cera líquida concentrada para usar como lavado final: deja una capa protectora que cuida la pintura de los rayos UV y la suciedad.","specs":[["Presentación","500 ml, lista para usar"],["pH","Neutro"],["Uso","Lavado final"],["Protección","Rayos UV y suciedad"]],"fit":"","catLabel":"Protección y brillo","img":"img/nova-wax.jpg","base":null,"minQty":0},{"id":"ceramix-polish","brand":"Ceramix Polish","type":"Crema pulidora","name":"Ceramix Polish","cat":"proteccion","pres":"200 g","ph":"Acabado espejo","price":88,"tint":"255,179,71","desc":"Crema diseñada para quitar rayones superficiales y dar un terminado espejo, para que la pintura vuelva a lucir como nueva.","specs":[["Presentación","200 g"],["Textura","Cremosa, se trabaja con microfibra"],["Resultado","Quita rayones superficiales · acabado espejo"],["Recomendación","Trabajar siempre en sombra"]],"fit":"#000","catLabel":"Protección y brillo","img":"img/ceramix-polish.jpg","base":null,"minQty":0},{"id":"hydroshield","brand":"Hydroshield","type":"Crema quita gotas","name":"Hydroshield Crema Quita Gotas","cat":"proteccion","pres":"200 g","ph":"Cristales","price":120,"tint":"163,91,255","desc":"Quita la suciedad por residuos o lluvia ácida en cristales, parabrisas y espejos.","specs":[["Presentación","200 g"],["Uso","Cristales, parabrisas y espejos"],["Resultado","Elimina residuos y lluvia ácida"],["Recomendación","Trabajar siempre en sombra"]],"fit":"#000","catLabel":"Protección y brillo","img":"img/hydroshield.jpg","base":null,"minQty":0},{"id":"glass-cleaner","brand":"Glass Cleaner","type":"Limpiador de cristales","name":"Limpiador Glass Cleaner","cat":"interior","pres":"500 ml","ph":"Sin rayones","price":95,"tint":"79,216,255","desc":"Limpia pantallas y superficies delicadas: teléfonos, pantallas táctiles, tableros y cristales. Elimina la suciedad grasosa sin dejar rayones.","specs":[["Presentación","500 ml"],["Superficies","Pantallas, tableros, cristales"],["Resultado","Sin rayones, incluso en acabado piano"]],"fit":"","catLabel":"Interiores y cristales","img":"img/glass-cleaner.jpg","base":null,"minQty":0},{"id":"apc-cleaner","brand":"APC Cleaner","type":"Limpiador de interiores","name":"APC Cleaner","cat":"interior","pres":"500 ml","ph":"pH neutro","price":85,"tint":"255,138,31","desc":"Limpiador de interiores para plásticos, piel, telas y toldo. Mucha espuma y agradable aroma a cítricos; rinde con poca cantidad.","specs":[["Presentación","500 ml"],["pH","Neutro (seguro en cualquier superficie interna)"],["Superficies","Plásticos, piel, telas y toldo"],["Aroma","Cítricos"]],"fit":"","catLabel":"Interiores y cristales","img":"img/apc-cleaner.jpg","base":null,"minQty":0},{"id":"int-shine","brand":"Int Shine","type":"Abrillantador de plásticos","name":"Int Shine Abrillantador de Plásticos","cat":"interior","pres":"500 ml","ph":"pH neutro","price":88,"tint":"52,224,192","desc":"Restaurador y protector de plásticos interiores a base de silicones, con diferentes aromas. Con poca cantidad se logran resultados profesionales.","specs":[["Presentación","500 ml"],["pH","Neutro"],["Base","Silicones"],["Aromas","Varios, agradables"],["Superficies","Plásticos internos"]],"fit":"","catLabel":"Interiores y cristales","img":"img/int-shine.jpg","base":null,"minQty":0},{"id":"black-mamba-crema","brand":"Black Mamba Crema","type":"Restaurador · interiores","name":"Restaurador de Plásticos Black Mamba (crema)","cat":"interior","pres":"500 ml","ph":"Base agua","price":88,"tint":"225,29,46","desc":"Crema a base de agua con agradable aroma, diseñada para restaurar y abrillantar interiores. También sirve en exteriores para los amantes del terminado brillante.","specs":[["Presentación","500 ml"],["Base","Agua"],["Acabado","Brillante"],["Uso","Interiores y exteriores"]],"fit":"","catLabel":"Interiores y cristales","img":"img/black-mamba-crema.jpg","base":null,"minQty":0},{"id":"black-mamba-gel","brand":"Black Mamba Gel","type":"Restaurador · exteriores","name":"Restaurador de Plásticos Black Mamba (gel)","cat":"exterior","pres":"500 ml","ph":"Efecto natural","price":88,"tint":"225,29,46","desc":"Gel a base de solvente para plásticos exteriores: fascias, molduras y plásticos del motor. Devuelve el color original a los plásticos deteriorados por el sol.","specs":[["Presentación","500 ml"],["Base","Solvente"],["Acabado","Natural"],["Uso","Fascias, molduras y plásticos del motor"]],"fit":"","catLabel":"Llantas y plásticos","img":"img/black-mamba-gel.jpg","base":null,"minQty":0},{"id":"tireshine","brand":"Tireshine","type":"Abrillantador de llantas","name":"Abrillantador para Llantas Tireshine","cat":"exterior","pres":"500 ml","ph":"Hidrofóbico","price":88,"tint":"255,210,31","desc":"Abrillantador en gel para llantas, a base de agua y con efecto hidrofóbico: da brillo y protege contra agua y polvo, con terminación de efecto mojado.","specs":[["Presentación","500 ml"],["Base","Agua · efecto hidrofóbico"],["Acabado","Mojado y brilloso"],["Aplicación","Descontamina y limpia antes; deja reposar 15 min antes de mover el auto"]],"fit":"","catLabel":"Llantas y plásticos","img":"img/tireshine.jpg","base":null,"minQty":0},{"id":"all-cleaner","brand":"All Cleaner","type":"APC multipropósito en gel","name":"All Cleaner APC Multipropósito en Gel","cat":"pesada","pres":"960 ml","ph":"pH alcalino","price":88,"tint":"182,255,46","desc":"Limpiador multipropósito en gel para exterior e interior. Su fórmula concentrada elimina cualquier tipo de suciedad en plásticos, telas, metal y tapetes.","specs":[["Presentación","960 ml"],["pH","Alcalino"],["Uso","Exterior e interior"],["Recomendación","Aplicar la dilución adecuada a la suciedad · siempre en sombra"]],"fit":"","catLabel":"Limpieza pesada","img":"img/all-cleaner.jpg","base":null,"minQty":0},{"id":"destroyer","brand":"Destroyer","type":"Desengrasante industrial","name":"Desengrasante Industrial Destroyer","cat":"pesada","pres":"1 L","ph":"pH alcalino","price":85,"tint":"255,75,58","desc":"Desengrasante concentrado para suciedad pesada en partes externas: motor, guardapolvos, rines y chasis. Trabaja sin tallar: se aplica y se activa con agua a presión.","specs":[["Presentación","1 litro"],["pH","Alcalino"],["Uso","Motor, guardapolvos, rines y chasis"],["Aplicación","Sin tallar, activar la espuma con agua a presión"],["Recomendación","Trabajar siempre en sombra"]],"fit":"","catLabel":"Limpieza pesada","img":"img/destroyer.jpg","base":null,"minQty":0},{"id":"aluclean","brand":"Aluclean","type":"Limpiador férrico","name":"Aluclean Limpiador Férrico","cat":"pesada","pres":"1 L","ph":"pH ácido","price":125,"tint":"163,91,255","desc":"Limpiador férrico para la suciedad incrustada: óxido, polvo de balatas y suciedad pesada en rines y chasis.","specs":[["Presentación","1 litro"],["pH","Ácido"],["Uso","Óxido, polvo de balatas, rines y chasis"],["Precaución","En sombra, máximo 5 minutos; nunca sobre plásticos ni superficies electrónicas"]],"fit":"","catLabel":"Limpieza pesada","img":"img/aluclean.jpg","base":null,"minQty":0},{"id":"brochas","brand":"Brochas de jabalí","type":"Pack de 5 piezas","name":"Brochas Pelo de Jabalí (pack de 5)","cat":"herramientas","pres":"5 pzas","ph":"Detallado","price":135,"tint":"214,170,110","desc":"Pack de 5 brochas de diferentes tamaños para detallado. Muy versátiles para la limpieza interna gracias a la suavidad de sus cerdas.","specs":[["Contenido","5 piezas, diferentes tamaños"],["Material","Pelo de jabalí"],["Uso","Limpieza interna y detallado"]],"fit":"#fff","catLabel":"Herramientas","img":"img/brochas.jpg","base":null,"minQty":0},{"id":"microfibras","brand":"Microfibras Pro","type":"Pack de 12 piezas","name":"Microfibras Profesionales (pack de 12)","cat":"herramientas","pres":"12 pzas","ph":"Alta absorción","price":192,"tint":"255,120,40","desc":"Pack de 12 microfibras de muy buena calidad: gran absorción al secar y muy buena adherencia para limpiar cristales.","specs":[["Contenido","12 piezas"],["Fortaleza","Absorción al secar y agarre en cristales"],["Uso","Secado, cristales y detallado"]],"fit":"#111","catLabel":"Herramientas","img":"img/microfibras.jpg","base":null,"minQty":0},{"id":"guante-verde","brand":"Guante de microfibra","type":"Lavado de contacto","name":"Guante de Microfibra para Lavado","cat":"herramientas","pres":"1 pza","ph":"Anti-rayones","price":95,"minQty":6,"tint":"182,255,46","desc":"Guante de microfibra grande para el lavado de contacto. Súper suave para evitar rayones.","specs":[["Contenido","1 pieza"],["Uso","Lavado de contacto"],["Ventaja","Súper suave, evita rayones"],["Mayoreo","$95 por pieza a partir de 6 piezas"]],"fit":"","catLabel":"Herramientas","img":"img/guante-verde.jpg","base":null}]}</script>
+</body>
+</html>
